@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pueue-pmon"
+version = "0.1.1"
+description = "Read-only live terminal monitor for pueue queues"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "third_party/pueue/LICENSE.MIT", "third_party/pueue/LICENSE.APACHE"]
+keywords = ["pueue", "monitor", "terminal", "queue"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: System :: Monitoring",
+]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ryusangwon/pmon"
+Repository = "https://github.com/ryusangwon/pmon"
+Issues = "https://github.com/ryusangwon/pmon/issues"
+PyPI = "https://pypi.org/project/pueue-pmon/"
+
+[project.scripts]
+pmon = "pmon.cli:main"
+pmon-pueue = "pmon.binaries:pueue_main"
+pmon-pueued = "pmon.binaries:pueued_main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

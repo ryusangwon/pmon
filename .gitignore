@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+.tmp/
+build/
+dist/
+*.egg-info/
+pmon.toml
+.env
+.pypirc
+*.token
+.pypi-token
+AGENTS.md
+release-validation.json

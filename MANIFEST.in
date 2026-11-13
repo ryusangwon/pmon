@@ -1,0 +1,12 @@
+include LICENSE README.md pyproject.toml setup.py pmon.toml.example
+include README.ko.md
+include RELEASING.md
+recursive-include tools *.py
+include tools/pueue.lock.json
+recursive-include third_party/pueue LICENSE.*
+recursive-include tests *.py
+prune .tmp
+prune .cache
+prune .venv
+prune dist
+exclude pmon.toml

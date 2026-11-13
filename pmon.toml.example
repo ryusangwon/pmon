@@ -1,0 +1,5 @@
+[connection]
+# Existing daemon configuration; relative to this file.
+config = "../some-project/.pueue/config.yml"
+# group = "gpu"
+# profile = "local"
